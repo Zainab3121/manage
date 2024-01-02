@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Public Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 html,body {
     scroll-behavior: smooth;
-    background-image: ;
 }
 
 a {
@@ -16,11 +15,275 @@ a {
 
 ul {
     list-style: none;
+    
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 40px 100px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+nav a {
+    color: gray;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    padding: 10px 19px;
+    background: #F25F3A;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none ;
+    box-shadow: 0px 0px 10px gray;
+}
+
+button:hover {
+    background-color:rgb(255, 122, 74);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    margin-top: 3rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    color: #242D52;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+main div {
+    width: 42%;
+}
+
+main img {
+    width: 45%;
+}
+
+main p {
+    font-size: 1.2rem;
+    color: gray;
+    margin: 1rem 0rem;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    margin: 3rem 0rem;
+}
+
+.about_manage {
+    width: 45%;
+}
+
+.about_manage h2 {
+    font-size: 2.2rem;
+    color: #242D52;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+
+.about_manage p {
+    font-size: 1.1rem;
+    color: gray;
+    margin: 1rem 0rem;   
+}
+
+#about ol {
+    width: 42%;
+    list-style: none;
+}
+
+#about ol li div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#about ol li h2 {
+    font-size: 1rem;
+    color: #242D52;
+}
+
+#about ol li div p {
+    background-color: orangered;
+    padding: .5rem 2rem;
+    border-radius: 50px;
+    color: white;
+}
+
+#about .about_text {
+    margin-left: 6.5rem;
+    color: gray;
+    line-height: 1.6;
+}
+
+#testimonial {
+    padding: 52px;
+}
+
+.testimonial_head {
+    width: 100%;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.testimonial_head h2 {
+    font-size: 2.5rem;
+    color: #242D52;
+}
+
+/* .testimonial_content { */
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem; */
+    /* margin: 0rem 1rem 0rem 1rem; */
+/* } */
+
+.testimonial_content p {
+    font-size: 1rem;
+}
+
+.testimonial_card {
+    text-align: center;
+    padding: 0rem 1rem 1rem;
+}
+
+.testimonial_card div {
+    background-color: #FAFAFA;
+    padding: 4rem 1rem 2rem;
+    margin-top: -2.5rem;
+}
+
+.testimonial_card img {
+    width: 28% !important;
+    margin: 0rem auto 0;
+}
+
+.testimonial_button {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dot {
+    background-color: orangered;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.owl-dot.active {
+    background-color: gray;
+}
+
+#team {
+    background-color: #F25F3A;
+    padding: 2.5rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team_txt {
+    width: 52%;
+}
+
+.team_txt h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#team button {
+    background-color: white;
+    color: #F25F3A;
+}
+
+#team button:hover {
+    background-color:rgb(224, 222, 222);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3.5rem;
+    background-color: #1D1E25;
+}
+
+
+.footer_list {
+    margin-left: 4rem;
+}
+
+footer a {
+    color: white;
+}
+
+.footer_list img {
+    filter: invert(1);
+}
+
+.footer_list ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.footer_list2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    line-height: 3;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer_btl {
+    margin-bottom: 2rem;
+}
+
+.btl1 {
+    margin-right: 1rem;
+    background-color: white;
+    color: gray;
+    font-size: 1rem;
+}
+
+.btl1:hover {
+    background-color:rgb(224, 222, 222);
+}
+
+.btl2 {
+    color: black;
+}
+
+#footer_end p {
+    color: white;
+    font-size: 12px;
 }
