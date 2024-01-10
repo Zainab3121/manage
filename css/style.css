@@ -5,8 +5,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
+:root {
+    --primary_color: #F25F3A;
+}
+
 html,body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a {
@@ -36,20 +41,24 @@ nav a {
     color: gray;
 }
 
+.toggle, .ri-close-fill {
+    display: none;
+}
+
 button {
     all: unset;
     cursor: pointer;
     padding: 10px 19px;
-    background: #F25F3A;
+    background: var(--primary_color);
     color: white;
     border-radius: 50px;
     font-size: 15px;
     border: none ;
-    box-shadow: 0px 0px 10px gray;
+    box-shadow: 0px 0px 10px var(--primary_color);
 }
 
 button:hover {
-    background-color:rgb(255, 122, 74);
+    background-color: var(--primary_color);
 }
 
 main {
@@ -121,7 +130,7 @@ main p {
 }
 
 #about ol li div p {
-    background-color: orangered;
+    background-color: var(--primary_color);
     padding: .5rem 2rem;
     border-radius: 50px;
     color: white;
@@ -186,7 +195,7 @@ main p {
 }
 
 .owl-dot {
-    background-color: orangered;
+    background-color: var(--primary_color);
     padding: 5px;
     border-radius: 50%;
 }
@@ -203,7 +212,10 @@ main p {
 }
 
 #team {
-    background-color: #F25F3A;
+    background-color: var(--primary_color);                                                                                                      #F25F3A;
+    background-image: url(/images/bg-simplify-section-desktop.svg);
+    background-position: center;
+    background-size: cover;
     padding: 2.5rem 6rem;
     display: flex;
     justify-content: space-between;
@@ -222,7 +234,7 @@ main p {
 
 #team button {
     background-color: white;
-    color: #F25F3A;
+    color: var(--primary_color);
 }
 
 #team button:hover {
@@ -264,18 +276,26 @@ footer a {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.input {
+    padding: 10px 19px;
+    color: white;
+    border-radius: 50px;
+    font-size: 15px;
+    border: none ;
+    outline: none;
+}
 .footer_btl {
     margin-bottom: 2rem;
 }
 
-.btl1 {
+.input {
     margin-right: 1rem;
     background-color: white;
     color: gray;
     font-size: 1rem;
 }
 
-.btl1:hover {
+.input:hover {
     background-color:rgb(224, 222, 222);
 }
 
@@ -286,4 +306,380 @@ footer a {
 #footer_end p {
     color: white;
     font-size: 12px;
+}
+
+.bg1 {
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    z-index: -1;
+    width: 50% ;
+}
+
+.bg2 {
+    position: absolute;
+    /* top: -70px; */
+    left: -300px;
+    z-index: -1;
+    width: 40% ;
+    margin-top: 5rem;
+}
+
+/* .fix {
+    position: absolute;
+    background-color: red;
+    padding: 1rem;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+} */
+
+@media screen and (max-width: 992px) {
+    body,html {
+        overflow-x: hidden;
+    }
+    nav, main, #about, #team {
+        padding: 40px 60px;
+    }
+
+   main div {
+    width: 50%;
+   }
+
+    nav img {
+        width: 80%;
+    }
+
+    nav ul {
+        font-size: 15px;
+        gap: 15px;
+       
+    }
+
+    button {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+ 
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 15px;
+    }
+
+    main img {
+        width: 45%;
+    }
+
+    #about ol {
+        width: 50%;
+    }
+
+    .bg1 {
+        position: absolute;
+        top: -40px;
+        right: -30px;
+        z-index: -1;
+        width: 50%;
+    }
+    
+    .bg2 {
+        position: absolute;
+        left: -120px;
+        z-index: -1;
+        width: 40% ;
+        margin-top: 5rem;
+    }
+
+    .team_txt h2 {
+        font-size: 2.2rem;
+    }
+
+    .footer_list {
+        margin-left: 0px;
+    }
+
+    .footer_list2 {
+        gap: 2.5rem;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 40px 35px;
+        gap: 40px;
+    }
+   
+}
+
+@media screen and (max-width: 768px) {
+   nav {
+    padding: 25px;
+   } 
+    
+    nav ul {
+        gap: 1rem;
+        font-size: 12px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    nav img {
+        width: 70%;
+    }
+
+   main {
+    padding: 10px 25px;
+   }
+   
+    main div {
+        width: 42%;
+    }
+
+    main img {
+        width: 50%;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    main button {
+        margin-left: 0px;
+        
+    }
+
+    #about {
+        padding: 25px;
+    }
+
+    .about_manage h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .about_manage p {
+        font-size: 15px;
+    }
+
+    .about_manage {
+        width: 42% ;
+    }
+
+    #about ol {
+        width: 55%;
+    }
+
+    #about ol li div h2 {
+        font-size: 15px;
+    }
+
+    .about_text {
+        font-size: 13px;
+    }
+
+    #about ol li div p {
+        padding: .5rem 1rem;
+    }
+
+    #about .about_text {
+        margin-left: 4.5rem;
+    }
+
+    .testimonial_head h2 {
+        font-size: 2rem;
+    }
+    
+    .testimonial_content p {
+        font-size: 14px;
+     }
+
+     #team {
+        padding: 25px;
+     }
+
+     .team_txt h2 {
+        font-size: 1.5rem;
+     }
+
+     footer {
+        padding: 5px;
+     }
+
+     .footer_list {
+        margin-left: 1rem;
+    }
+
+    .footer_list2 {
+        font-size: 13px;
+        gap: 1rem;
+        margin: auto 1rem auto 3rem;
+    }
+
+    
+
+    .input {
+        font-size: 13px;
+        margin-right: 0px;
+        padding: 10px 12px;
+    }
+
+    .btl2 {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .footer_btl {
+        padding: 3px;
+        margin-right: 1rem;
+    }
+
+    #footer_end p {
+        font-size: 10px;
+        margin-left: 3px;
+    }
+
+    .footer_btl {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    nav button {
+        display: none;
+        padding: 20px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 20px;  
+    }
+
+    main div {
+        width: 80%;
+        text-align: center;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about_manage {
+        width: 100%;
+    }
+
+    #about ol {
+        width: 100%;
+    }
+
+    #about ol li div {
+        background-color: hsla(10, 100%, 83%, 0.664);
+        border-radius: 50px 0 0 50px;
+        margin-top: 2rem;
+    }
+
+    #about ol li div h2 {
+        font-size: 14px;
+        text-align: left;
+    } 
+
+    #about .about_text {
+        margin-left: 0px;
+        font-size: 10px;
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    #team {
+        flex-direction: column;
+    }
+
+    .team_txt {
+        width: 90%;
+    }
+
+    .team_txt h2 {
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 1.9rem;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 25px;
+        margin-left: 0px;
+        
+    }
+
+    .footer_list {
+        margin-left: 0px;
+    }
+
+    .footer_list ul {
+        margin-top: 2rem;
+    }
+
+
+    .footer_list2 {
+        gap: 3rem;
+        font-size: 15px;
+        margin-left: 0;
+        text-align: start;
+    }
+
+    #footer_end p {
+        display: block;
+    }
+
+    .footer_btl {
+        margin-right: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: rgb(241, 237, 237);
+        flex-direction: column;
+        width: 50%;
+        top: 0%;
+        right: -200%;
+        height: 100vh;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 1.5rem;
+        transition: 0.5s;
+
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .ri-close-fill {
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
 }

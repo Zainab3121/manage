@@ -13,25 +13,30 @@
 </head>
 <body>
     <nav>
+        
         <a href="/">
             <img src="/images/logo.svg" alt="logo">
         </a>
 
-            <ul>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Community</a></li>
-            </ul>
+        <ul>
+            <i class="ri-close-fill"></i>
+            <li><a href="#main_txt">Pricing</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#testimonial">Community</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#footer">Careers</a></li>
+        </ul>
 
-            <button>
-                Get Started
-            </button>
-        
+        <div class="toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    
+        <button>
+            Get Started
+        </button>
     </nav>
 
-    <main>
+    <main id="main_txt">
         <div>
             <h1>
                 Bring everyone together to build better products.
@@ -56,6 +61,8 @@
             <p>
                 Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams
             </p>
+
+            <img src="/images/bg-tablet-pattern.svg" alt="bg-tablet-pattern" class="bg2">
         </div>
 
         <ol>
@@ -260,12 +267,25 @@
 
         <div id="footer_end">
             <div class="footer_btl">
-                <button class="btl1">updata in your inbox...</button> <button class="btl2">Go</button>
+                <input type="text" placeholder="Update in your inbox..." class="input">
+                
+                <button class="btl2">Go</button>
             </div>
 
             <p>&COPY;copyright 2020. All Rights Reserved</p>    
         </div>
     </footer>
+
+    <!-- <div class="fix">
+
+        <p>This is position</p>
+        <button class="ok">Ok</button>
+
+    </div> -->
+
+    <div>
+        <img src="/images/bg-tablet-pattern.svg" alt="bg-tablet-pattern" class="bg1">
+    </div>
 
     <script src="/Js/jquery.js"></script>
     <script src="/Js/owlcarousel.js"></script>

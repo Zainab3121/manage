@@ -26,3 +26,28 @@ $(".testimonial_content").owlCarousel({
       },
     },
   });
+
+  // AOS.init();
+
+const navOpen = document.querySelector(".ri-menu-line")
+const navClose = document.querySelector(".ri-close-fill")
+const nav = document.querySelector("nav ul")
+
+navOpen.addEventListener("click", function(){
+  nav.style.right = "0%"
+})
+
+navClose.addEventListener("click", function(){
+    nav.style.right = "-200%"
+  })
+
+//   document.getElementById("")
+//   document.getElementsByClassName
+
+const navLinks = document.querySelectorAll("nav ul li")
+console.log(navLinks)
+navLinks.forEach(function(link){
+    link.addEventListener("click", function(){
+        nav.style.right = "-200%"
+    })
+})
