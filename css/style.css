@@ -674,12 +674,15 @@ footer a {
 
     .toggle {
         display: block;
+        font-size: 1rem;
+        cursor: pointer;
     }
 
     .ri-close-fill {
         cursor: pointer;
         margin-top: 1rem;
         font-size: 1rem;
+        display: block;
     }
 
 }
